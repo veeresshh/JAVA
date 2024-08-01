@@ -3,7 +3,7 @@ package Java;
 public class ChildAircraft extends ParentAircraft {
 
 	public static void main(String[] args) {
-		
+
 		ChildAircraft e = new ChildAircraft();
 		e.Engine();
 		e.SafetyGuidelines();
@@ -13,7 +13,7 @@ public class ChildAircraft extends ParentAircraft {
 
 	@Override
 	public void BodyColor() {
-		
+
 		System.out.println("Body Color");
 	}
 

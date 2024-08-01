@@ -7,39 +7,39 @@ import java.util.Set;
 
 public class CollectionHashTable {
 
-    public static void main(String[] args) {
+	public static void main(String[] args) {
 
-        Hashtable<Integer, String> hm = new Hashtable<>();
-        hm.put(0, "Hello");
-        hm.put(1, "Good Morning");
-        hm.put(2, "How are You");
+		Hashtable<Integer, String> hm = new Hashtable<>();
+		hm.put(0, "Hello");
+		hm.put(1, "Good Morning");
+		hm.put(2, "How are You");
 
-        // Hashtable does not accept null values
-        // hm.put(3, null);
+		// Hashtable does not accept null values
+		// hm.put(3, null);
 
-        hm.remove(1);
+		hm.remove(1);
 
-        System.out.println(hm);
+		System.out.println(hm);
 
-        System.out.println(hm.get(2));
+		System.out.println(hm.get(2));
 
-        System.out.println(hm.get(42));
+		System.out.println(hm.get(42));
 
-        // Iterator [ Hashtable has to be converted into Set to get Iterated ]
+		// Iterator [ Hashtable has to be converted into Set to get Iterated ]
 
-        Set<Map.Entry<Integer, String>> s = hm.entrySet();
+		Set<Map.Entry<Integer, String>> s = hm.entrySet();
 
-        Iterator<Map.Entry<Integer, String>> i = s.iterator();
+		Iterator<Map.Entry<Integer, String>> i = s.iterator();
 
-        while (i.hasNext()) {
+		while (i.hasNext()) {
 
-            // Map.Entry to be used to separate key and value from hash set
+			// Map.Entry to be used to separate key and value from hash set
 
-            Map.Entry<Integer, String> m = i.next();
+			Map.Entry<Integer, String> m = i.next();
 
-            System.out.println(m.getKey());
-            System.out.println(m.getValue());
+			System.out.println(m.getKey());
+			System.out.println(m.getValue());
 
-        }
-    }
+		}
+	}
 }

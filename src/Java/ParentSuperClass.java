@@ -15,7 +15,7 @@ public class ParentSuperClass {
 	}
 	
 //Constructors
-	
+
 	public ParentSuperClass()
 	
 	{
